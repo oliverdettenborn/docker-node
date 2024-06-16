@@ -1,4 +1,2 @@
-FROM ubuntu:latest
-LABEL authors="oliver"
-
-ENTRYPOINT ["top", "-b"]
+FROM nginx
+COPY default.conf /etc/nginx/conf.d/default.conf
